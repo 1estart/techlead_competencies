@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: pg-demo
+    environment:
+      POSTGRES_USER: demo
+      POSTGRES_PASSWORD: demo123
+      POSTGRES_DB: demo_db
+    ports:
+      - "5432:5432"
+    volumes:
+      # Подключаем кастомный конфиг
+      - ./conf/custom.conf:/etc/postgresql/postgresql.conf.d/custom.conf
+      # Подключаем SQL-скрипт, который выполнится при первом запуске
+      - ./init/01_demo.sql:/docker-entrypoint-initdb.d/01_demo.sql
+      # Данные (чтобы не терялись при перезапуске)
+      - pgdata:/var/lib/postgresql/data
+    command: >
+      postgres
+        -c config_file=/etc/postgresql/postgresql.conf.d/custom.conf
+
+volumes:
+  pgdata:

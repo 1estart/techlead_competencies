@@ -1,0 +1,25 @@
+# Docker volumes 
+pgdata/
+data/
+
+# Логи
+*.log
+log/
+
+# Переменные окружения
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Временные файлы
+*.tmp
+*.bak
