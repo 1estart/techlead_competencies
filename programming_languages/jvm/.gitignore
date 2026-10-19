@@ -1,0 +1,48 @@
+# Java compiled files
+*.class
+
+# Packages
+*.jar
+*.war
+*.ear
+
+# HotSpot crash logs
+hs_err_pid*
+replay_pid*
+
+# Build outputs
+build/
+out/
+target/
+bin/
+
+# Metals
+.metals/
+
+# Gradle
+.gradle/
+
+# Maven
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
