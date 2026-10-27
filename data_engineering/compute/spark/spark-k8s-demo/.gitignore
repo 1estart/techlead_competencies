@@ -1,0 +1,62 @@
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- IDE ---
+.idea/
+*.iml
+.vscode/
+.history/
+
+# --- Scala / scala-cli / sbt / metals / bloop ---
+target/
+project/target/
+project/project/
+.bsp/
+.metals/
+.bloop/
+.scala-build/
+out/
+
+# --- Java / Scala compiled classes ---
+*.class
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Generated Spark application artifact ---
+/app.jar
+/spark-demo.tar
+*.tmp
+
+# --- Docker local exports ---
+*.tar
+
+# --- Environment / secrets ---
+.env
+.env.*
+*.pem
+*.key
+*.crt
+secrets/
+
+# --- Kubernetes local artifacts ---
+kubeconfig
+*.kubeconfig
+
+# --- Python cache, if you later add dbt/airflow/dagster ---
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# --- Node, if later add frontend/docs tooling ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

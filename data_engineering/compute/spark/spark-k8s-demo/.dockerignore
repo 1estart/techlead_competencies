@@ -1,0 +1,34 @@
+# Git
+.git
+.gitignore
+
+# IDE
+.idea
+.vscode
+
+# Scala / build caches
+.scala-build
+.bsp
+.metals
+.bloop
+target
+project/target
+project/project
+
+# Docker files themselves
+Dockerfile
+.dockerignore
+
+# Docs
+README.md
+
+# Kubernetes manifests
+rbac.yaml
+submit.sh
+*.yaml
+*.yml
+
+# Archives / temporary
+*.tar
+*.tmp
+*.log
